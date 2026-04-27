@@ -1,7 +1,8 @@
 # 📇 Contacts — MERN Stack Contact Manager
 
-- **Developer:** Saleh Muhammad Mangrio
-- A modern, secure, and fully responsive contact management application built with the MERN stack.
+> **Developer:** Saleh Muhammad Mangrio
+
+> A modern, secure, and fully responsive contact management application built with the MERN stack.
 
 ---
 
@@ -51,47 +52,87 @@
 
 ---
 
-## 📁 Project Structure
+## 📸 Screenshots
 
-```bash
-contact/
-├── backend/
-│   ├── src/
-│   │   ├── config/
-│   │   ├── controller/
-│   │   ├── middlewares/
-│   │   ├── models/
-│   │   ├── routes/
-│   │   ├── services/
-│   │   ├── utils/
-│   │   ├── validations/
-│   │   ├── app.js
-│   │   └── server.js
-│   └── package.json
-│
-├── frontend/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── global.css
-│   └── package.json
-│
-└── README.md
-```
+| Login Page          | Register Page             |
+| ------------------- | ------------------------- |
+| ![Login](login.png) | ![Register](register.png) |
+
+> Additional screens include Landing Page, All Contacts, Create Contact, View Contact, and Edit Contact, all designed with a consistent emerald glassmorphism theme.
 
 ---
 
-## 🎓 What I Learned
+## 📁 Complete Project Structure
 
-- Building secure JWT authentication systems
-- Structuring scalable MERN applications
-- Implementing protected routes and middleware
-- Designing responsive glassmorphism interfaces
-- Managing state and API communication effectively
+```bash
+contact/
+├── README.md
+├── login.png
+├── register.png
+│
+├── backend/
+│   ├── package.json
+│   ├── package-lock.json
+│   └── src/
+│       ├── server.js
+│       ├── app.js
+│       ├── config/
+│       │   └── db.js
+│       ├── controller/
+│       │   ├── userController.js
+│       │   └── contactController.js
+│       ├── middlewares/
+│       │   ├── authMiddleware.js
+│       │   └── userMiddlewares.js
+│       ├── models/
+│       │   ├── userModel.js
+│       │   └── contactModel.js
+│       ├── routes/
+│       │   ├── userRoute.js
+│       │   └── contactRoutes.js
+│       ├── services/
+│       │   ├── userServices.js
+│       │   └── contactServices.js
+│       ├── utils/
+│       │   └── token.js
+│       └── validations/
+│           ├── userValidation.js
+│           └── contactValidation.js
+│
+└── frontend/
+    ├── package.json
+    ├── package-lock.json
+    ├── index.html
+    ├── vite.config.js
+    ├── eslint.config.js
+    └── src/
+        ├── main.jsx
+        ├── App.jsx
+        ├── global.css
+        ├── AnimateRoutes.jsx
+        ├── assets/
+        │   ├── logo.gif
+        │   └── leaf.png
+        ├── components/
+        │   ├── Navbar.jsx
+        │   ├── ProtectedRoutes.jsx
+        │   └── ConfirmModal.jsx
+        ├── pages/
+        │   ├── Home/
+        │   │   └── LandingPage.jsx
+        │   ├── auth/
+        │   │   ├── Login.jsx
+        │   │   └── Register.jsx
+        │   └── contact/
+        │       ├── AllContacts.jsx
+        │       ├── CreateContact.jsx
+        │       ├── ViewContact.jsx
+        │       └── EditContact.jsx
+        └── utils/
+            └── api.js
+```
 
+---
 
 ## 🚀 Getting Started
 
@@ -105,7 +146,7 @@ contact/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Salehmangrio/Contacts.git
+git clone https://github.com/salehmangrio/Contact.git
 cd contact
 ```
 
@@ -264,6 +305,16 @@ Contributions, issues, and feature requests are welcome.
 
 ---
 
+## 🎓 What I Learned
+
+- Building secure JWT authentication systems
+- Structuring scalable MERN applications
+- Implementing protected routes and middleware
+- Designing responsive glassmorphism interfaces
+- Managing state and API communication effectively
+
+---
+
 ## 📄 License
 
 This project is licensed under the ISC License.
@@ -274,8 +325,8 @@ This project is licensed under the ISC License.
 
 **Saleh Muhammad Mangrio**
 
-* GitHub: [https://github.com/your-username](https://github.com/Salehmangrio)
-* LinkedIn: [https://linkedin.com/in/your-profile](https://linkedin.com/in/salehmuhammad114)
+* GitHub: [https://github.com/salehmangrio](https://github.com/salehmangrio)
+* LinkedIn: [https://linkedin.com/in/salehmuhammad114](https://linkedin.com/in/salehmuhammad114)
 
 ---
 
